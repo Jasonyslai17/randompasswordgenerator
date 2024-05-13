@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="flex">
+        <div class="container">
+            <div class="uppersection">
+                <h1 class="title">Generate a <br>
+                    <span class="title-pop">random password</span></h1>
+                <h2 class="subtitle">Time to ditch that old password.</h2>
+                <span id="password-slider-text">length: <span id="slider-number">8</span></span>
+                <br>
+                <input type="range" id="password-length-slider" min="8" max="12" value="8">
+                <br>
+                <button id="generate-button" onclick="displayPasswords()"><img src="icon.png" alt="icon-button" id="thundericon">Generate Passwords</button>
+            </div>
+
+            <hr>
+
+            <div class="lowersection">
+                <div class="generated-password" id="password1">...</div>
+                <div class="generated-password" id="password2">...</div>
+                <div class="generated-password" id="password3">...</div>
+                <div class="generated-password" id="password4">...</div>
+            </div>
+
+        </div>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

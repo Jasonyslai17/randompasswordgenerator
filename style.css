@@ -1,0 +1,117 @@
+body {
+    background-color: #fefae0;
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: 500px;
+    background-color: #6a3e18;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.title {
+    color: #fefae0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.title-pop {
+    color: #fb8500;
+}
+
+.subtitle {
+    color: #e9edc9;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#password-slider-text {
+    color: #e9edc9;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#generate-button {
+    margin-top: 10px;
+    background-color:#fb8500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#generate-button:hover,
+#generate-button:focus {
+    background-color: #fff;
+    color: #fb8500;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+      0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+      0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+#generate-button img {
+    transition: filter 1s ease;
+}
+
+#generate-button:hover img,
+#generate-button:focus img {
+    filter: brightness(0) invert(1);
+}
+
+#slider-number {
+    color: #fb8500;
+    font-weight: 700;
+}
+
+#thundericon {
+    width: 7px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+
+.generated-password {
+    color: #af6728;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: #79471b;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.lowersection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1em;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
